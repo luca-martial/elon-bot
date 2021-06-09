@@ -8,6 +8,8 @@
 
 This repo contains code to create an AI replica of Elon Musk that can chat and moderate user interactions on Discord. Its conversation abilities come from Microsoft's [DialoGPT conversational model](https://huggingface.co/microsoft/DialoGPT-medium) fine-tuned using conversation transcripts of Elon Musk's appearance on the Joe Rogan Experience, the Lex Fridman Podcast and a Clubhouse interview. Its moderation abilities come from Unitary's [Multilingual Toxic Comment Classifier](https://huggingface.co/unitary/multilingual-toxic-xlm-roberta) which allow it to assess the toxicity of a comment and warn users when they make use of foul language, kicking them out of the channel if they get 3 strikes.
 
+Wanna try it out? Here's an invite link to the Discord server: https://discord.gg/kTgvqAWWx8
+
 Here is a demo of the bot in action.
 
 You can also directly chat with the model hosted on Hugging Face's Model Hub.
