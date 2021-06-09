@@ -36,7 +36,7 @@ You can also directly chat with the model hosted on [Hugging Face's Model Hub](h
 
 - Intelligent chatting
 - Automated responses to messages about bitcoin and dogecoin
-- Detecting toxic messages and reacting to them
+- Detecting toxic messages in multiple languages and reacting to them
 - Kicking users out of server after 3 instances of toxic messages
 - Tells users how many strikes they have (message `!kick` to use this functionality)
 
