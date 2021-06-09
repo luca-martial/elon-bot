@@ -6,6 +6,8 @@
 
 # ElonBot: The Discord AI Bot for Chatting and Moderation
 
+<img src="https://github.com/luca-martial/elon-bot/blob/main/botdp.png" width=200><br>
+
 This repo contains code to create an AI replica of Elon Musk that can chat and moderate user interactions on Discord. Its conversation abilities come from Microsoft's [DialoGPT conversational model](https://huggingface.co/microsoft/DialoGPT-medium) fine-tuned using conversation transcripts of Elon Musk's appearance on the Joe Rogan Experience, the Lex Fridman Podcast and a Clubhouse interview. Its moderation abilities come from Unitary's [Multilingual Toxic Comment Classifier](https://huggingface.co/unitary/multilingual-toxic-xlm-roberta) allowing it to assess the toxicity of a message, warn users when they're using foul language and kick them out of the server when they get 3 strikes.
 
 ## Try It Out!
@@ -22,13 +24,15 @@ Here is a demo of a conversation about colonizing Mars:
 
 <img src="https://github.com/luca-martial/elon-bot/blob/main/gifs/spacex.gif" width=500><br>
 
-Here is a demo of a conversation about bitcoin and dogecoin:
+Here is a demo of a conversation about bitcoin and dogecoin, along with an example of an abusive user getting kicked out:
 
-<img src="https://github.com/luca-martial/elon-bot/blob/main/gifs/kick.gif" width=500><br>
+<img src="https://github.com/luca-martial/elon-bot/blob/main/gifs/kick_bitcoin.gif" width=500><br>
 
 You can also directly chat with the model hosted on [Hugging Face's Model Hub](https://huggingface.co/luca-martial/DialoGPT-Elon):
 
-## Detailed Abilities
+<img src="https://github.com/luca-martial/elon-bot/blob/main/gifs/hf_api.gif" width=500><br>
+
+## Abilities in Detail
 
 - Intelligent chatting
 - Automated responses to messages about bitcoin and dogecoin
@@ -38,7 +42,10 @@ You can also directly chat with the model hosted on [Hugging Face's Model Hub](h
 
 ## Repository Structure
 
-- **[mask-wear](https://github.com/luca-martial/fastai-v1-projects/tree/master/mask-wear)**: The goal of this project was to build an image classifier that identifies whether a person is wearing their mask properly or imporperly. Data was collected using Google Images. 
+- **[data](https://github.com/luca-martial/elon-bot/tree/main/data)**: Folder containing webscraped transcripts from Elon's interviews on [Clubhouse](https://zamesin.me/clubhouse-elon-musk-interview/) and the [Lex Fridman podcast](https://lexfridman.com/wordpress/wp-content/uploads/2019/11/elon_musk_lex_fridman_2_transcript.pdf), as well as a [ready-to-use dataset](https://www.kaggle.com/christianlillelund/joe-rogan-experience-1169-elon-musk) retrieved from Kaggle of Elon's interview on the Joe Rogan Experience
+- **[elon_bot.ipynb](https://github.com/luca-martial/elon-bot/blob/main/elon_bot.ipynb)**: Notebook for processing transcripts, fine tuning the DialoGPT model on the Elon's interview transcripts and pushing the fine-tuned model to Hugging Face
+- **[main.py](https://github.com/luca-martial/elon-bot/blob/main/main.py)**: Python script for all Discord bot functionalities
+- **[keep_alive.py](https://github.com/luca-martial/elon-bot/blob/main/main.py)**: Python script allowing bot to stay up
 
 ## Credit
 
@@ -46,7 +53,7 @@ None of this work would have been possible without the following immensly valuab
 
 - freeCodeCamp's amazing tutorial: [Code a Discord Bot with Python - Host for Free in the Cloud](https://www.youtube.com/watch?v=SPTfmiYiuok)
 - [Lynn Zheng](https://ruolinzheng08.github.io/)'s great [tutorial](https://www.freecodecamp.org/news/discord-ai-chatbot/) on freeCodeCamp and [repo](https://github.com/RuolinZheng08/twewy-discord-chatbot), as well as [Rostyslav Neskorozhenyi](https://www.linkedin.com/in/slanj/)'s great [Medium article]((https://towardsdatascience.com/make-your-own-rick-sanchez-bot-with-transformers-and-dialogpt-fine-tuning-f85e6d1f4e30)) and [Colab notebook](https://colab.research.google.com/drive/15wa925dj7jvdvrz8_z3vU7btqAFQLVlG) for fine tuning Microsoft's [DialoGPT conversational model](https://huggingface.co/microsoft/DialoGPT-medium) to have conversations with a video game or movie character
-- [Nathan Cooper](https://github.com/ncoop57)'s awesome [tutorial](https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/05/12/chatbot-part-1.html) on open-dialog chatbots
+- [Nathan Cooper](https://github.com/ncoop57)'s awesome [tutorial](https://nathancooper.io/i-am-a-nerd/chatbot/deep-learning/gpt2/2020/05/12/chatbot-part-1.html) on creating open-dialog chatbots
 - [Dale Markowitz](https://daleonai.com/)'s [insightful post](https://daleonai.com/build-your-own-ai-moderator-bot-for-discord-with-the-perspective-api) on building your own AI moderator bot for Discord
 
 ## Contributing
