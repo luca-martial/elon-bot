@@ -12,7 +12,7 @@ This repo contains code to create an AI replica of Elon Musk that can chat and m
 
 ## Try It Out!
 
-Wanna try it out? Here's an invite link to the Discord server: https://discord.gg/kTgvqAWWx8
+Wanna try it out? Here's an invite link to the Discord server (read message history is disabled): https://discord.gg/kTgvqAWWx8 
 
 ## Demo
 
