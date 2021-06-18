@@ -14,7 +14,7 @@ This repo contains code to create an AI replica of Elon Musk that can chat and m
 
 Wanna try it out? Here's an invite link to the Discord server (read message history is disabled). 
 
-**Warning: give Elon a couple of minutes to get connected to his brain over at [Hugging Face](https://huggingface.co/). Until then, he'll spew some nonsense about how his brain has overheated.**
+⚠️ **Warning: give Elon around 2 minutes to get connected to his brain over at [Hugging Face](https://huggingface.co/). Until then, he'll spew some nonsense about how his brain has overheated.**
 
 Invite link: https://discord.gg/kTgvqAWWx8 
 
